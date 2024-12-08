@@ -9,7 +9,7 @@ toc: false
 <!-- Load and transform the data -->
 
 ```js
-const contributions = FileAttachment("data/contributions/github-contributions.csv").csv({typed: true});
+const contributions = FileAttachment("data/contributions/github_contributions.csv").csv({typed: true});
 ```
 
 <!-- A shared color scale for consistency, sorted by the number of contributions -->
@@ -18,7 +18,7 @@ const contributions = FileAttachment("data/contributions/github-contributions.cs
 const color = Plot.scale({
   color: {
     type: "categorical",
-    domain: d3.groupSort(contributions, (D) => -D.length, (d) => d.state).filter((d) => d !== "Other"),
+    domain: d3.groupSort(contributions, (D) => -D.length, (d) => d.repo).filter((d) => d !== "Other"),
     unknown: "var(--theme-foreground-muted)"
   }
 });
@@ -29,19 +29,19 @@ const color = Plot.scale({
 <div class="grid grid-cols-4">
   <div class="card">
     <h2>Commits</h2>
-    <span class="big">${contributions.filter((d) => d.stateId === "CO").length.toLocaleString("en-US")}</span>
+    <span class="big">${contributions.filter((d) => d.type === "Commit").reduce((sum, d) => sum + d.count, 0)}</span>
   </div>
   <div class="card">
     <h2>Pull Requests <span class="muted">/ </span></h2>
-    <span class="big">${contributions.filter((d) => d.stateId === "PR").length.toLocaleString("en-US")}</span>
+    <span class="big">${contributions.filter((d) => d.type === "Pull Request").length.toLocaleString("en-US")}</span>
   </div>
   <div class="card">
     <h2>Issues</h2>
-    <span class="big">${contributions.filter((d) => d.stateId === "IS").length.toLocaleString("en-US")}</span>
+    <span class="big">${contributions.filter((d) => d.type === "Issue").length.toLocaleString("en-US")}</span>
   </div>
   <div class="card">
     <h2>Code Reviews</h2>
-    <span class="big">${contributions.filter((d) => d.stateId === "CR").length.toLocaleString("en-US")}</span>
+    <span class="big">${contributions.filter((d) => d.type === "Code Review").length.toLocaleString("en-US")}</span>
   </div>
 </div>
 
@@ -56,7 +56,7 @@ function contributionTimeline(data, {width} = {}) {
         y: {grid: true, label: "Contributions"},
         color: {...color, legend: true},
         marks: [
-            Plot.rectY(data, Plot.binX({y: "count"}, {x: "date", fill: "state", interval: "month", tip: true})),
+            Plot.rectY(data, Plot.binX({y: "count"}, {x: "date", fill: "repo", interval: "month", tip: true})),
             Plot.ruleY([0])
         ]
     });
@@ -83,7 +83,7 @@ function repositoryChart(data, {width}) {
         y: {label: null},
         color: {...color, legend: true},
         marks: [
-            Plot.rectX(data, Plot.groupY({x: "count"}, {y: "family", fill: "state", tip: true, sort: {y: "-x"}})),
+            Plot.rectX(data, Plot.groupY({x: "count"}, {y: "family", fill: "repo", tip: true, sort: {y: "-x"}})),
             Plot.ruleX([0])
         ]
     });
