@@ -187,7 +187,7 @@ function repositoryChart(data, { width }) {
     // Sort repositories by contribution count in descending order
     repoData.sort((a, b) => b.count - a.count);
 
-    // Select the top 50 repositories
+    // Select the top 25 repositories
     const topRepos = repoData.slice(0, TOP);
 
     // Group remaining repositories as "Others"
@@ -197,7 +197,7 @@ function repositoryChart(data, { width }) {
         count: d3.sum(otherRepos, (d) => d.count)  // Sum of contributions from "Others"
     };
 
-    // Combine top 50 repos with "Others"
+    // Combine top 25 repos with "Others"
     const finalRepoData = [...topRepos, others];
 
     // Create the chart with a larger size
