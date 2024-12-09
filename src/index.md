@@ -171,10 +171,10 @@ function contributionTimeline(data, {width} = {}) {
 
 <!-- Plot of contributions repositories -->
 
-## What are the TOP 50 repositories to which I have contributed 2024?
+## What are the TOP 25 repositories to which I have contributed 2024?
 ```js
 function repositoryChart(data, { width }) {
-    const TOP=50
+    const TOP=25
     // Aggregate contributions per repository (sum of commits, PRs, code reviews, and issues)
     const repoContributions = d3.rollup(data, 
         (v) => d3.sum(v, (d) => d.count),  // Sum of counts per repository
