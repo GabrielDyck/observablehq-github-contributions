@@ -30,12 +30,14 @@ const color = Plot.scale({
 
 import { pie, arc, scaleOrdinal, schemeObservable10 } from "d3";
 function renderPieChart() {
-  const data = [
+  let  data = [
     { category: "Commits", value: contributions.filter((d) => d.type === "Commit").reduce((sum, d) => sum + d.count, 0) },
     { category: "Pull Requests", value: contributions.filter((d) => d.type === "Pull Request").length },
     { category: "Issues", value: contributions.filter((d) => d.type === "Issue").length },
     { category: "Code Reviews", value: contributions.filter((d) => d.type === "Code Review").length }
   ];
+  
+  data= data.filter((c) => c.value != 0)
 
 
   const total = data.reduce((sum, d) => sum + d.value, 0); // Calculate total sum of all values
@@ -116,7 +118,11 @@ function renderPieChart() {
 
 <!-- Cards with big numbers -->
 
-  <div class=" grid grid-cols-4">
+  <div class=" grid grid-cols-3">
+      <div class="card">
+        <h2>Total Contribution</h2>
+        <span class="big">${contributions.reduce((sum, d) => sum + d.count, 0)}</span>
+      </div>
       <div class="card">
         <h2>Commits</h2>
         <span class="big">${contributions.filter((d) => d.type === "Commit").reduce((sum, d) => sum + d.count, 0)}</span>
@@ -179,7 +185,7 @@ const basePlot = Plot.plot({
       x: "month",
       y: "sum",
       fill: "month",
-      tooltip: d => `Month: ${d.month}, Total Contributions: ${d.sum}`,  // Custom tooltip
+      tip: d => `Month: ${d.month}, Total Contributions: ${d.sum}`,  // Custom tooltip
     }),
     Plot.ruleY([0]),
   ],
