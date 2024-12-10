@@ -152,7 +152,7 @@ function renderPieChart() {
 
 <!-- Plot of launch history -->
 
-## How many contribution have I made each month over the last year ?
+## How many contribution have I made each month over the last year ? ( Click for repository distribution)
 ```js
 import { rollup } from "d3";
 
