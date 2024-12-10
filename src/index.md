@@ -240,7 +240,7 @@ function renderRepoBreakdown(monthData,clickedMonth , width) {
 
     // Create the plot
     const repoPlot = Plot.plot({
-        title: "Contributions by Repository (Stacked) in " + clickedMonth,
+        title: "Contributions by Repository (Stacked) in Month" + clickedMonth,
         width: width,
         height: 300,
         y: { 
