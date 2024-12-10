@@ -217,6 +217,9 @@ d3.select(basePlot).selectAll("rect")
     return basePlot;
 }
 function renderRepoBreakdown(monthData,clickedMonth , width) {
+    
+    
+    
     console.log("Rendering Repo Breakdown for Month Data:", monthData);
 
     // Aggregate the contributions by month and repo
@@ -235,39 +238,97 @@ function renderRepoBreakdown(monthData,clickedMonth , width) {
         });
     });
     
-    console.log(aggregatedData); // Check what is being aggregated for each month-repo combination
+// Define the treemap
+const height = 300;
+
+// Transform the flattened data into a hierarchy for the treemap
+const hierarchyData = {
+    name: "root",
+    children: Array.from(
+        d3.group(flattenedData, d => d.month),
+        ([month, repoData]) => ({
+            name: month,
+            children: Array.from(
+                d3.group(repoData, d => d.repo),
+                ([repo, values]) => ({
+                    name: repo,
+                    value: d3.sum(values, d => d.count)
+                })
+            )
+        })
+    )
+};
+
+// Define the color scale based on unique repositories
+const allRepos = Array.from(new Set(flattenedData.map(d => d.repo)));
+const color = d3.scaleOrdinal(allRepos, d3.schemeTableau10);
+
+// Compute the layout
+const root = d3.treemap()
+    .tile(d3.treemapSquarify) // Squarify layout
+    .size([width, height])
+    .padding(1)
+    .round(true)(
+        d3.hierarchy(hierarchyData)
+            .sum(d => d.value)
+            .sort((a, b) => b.value - a.value)
+    );
+
+const h3=d3.create("h3")
+    .attr("x", width / 2) // Center the title
+    .attr("y", 20) // Position the title at the top
+    .attr("margin-bottom","50px")
+    .attr("text-anchor", "middle") // Center align the text
+    .attr("font-size", "16px") // Set font size
+    .attr("font-weight", "bold") // Set font weight
+    .text();
+
+// Create the SVG container
+const svg = d3.create("svg")
+    .attr("viewBox", [0, 0, width, height])
+    .attr("width", width)
+    .attr("height", height)
+    .attr("style", "max-width: 100%; height: auto; font: 10px sans-serif;");
 
 
-    // Create the plot
-    const repoPlot = Plot.plot({
-        title: "Contributions by Repository (Stacked) in Month " + clickedMonth,
-        width: width,
-        height: 300,
-        y: { 
-            label: "Contributions",
-            grid: true 
-        },
-        color: { 
-            legend: true, // Automatically generates legend based on the `repo` field
-            scale: { 
-                domain: flattenedData.map(d => d.repo), 
-                range: d3.schemeCategory10 
-            }
-        },
-        marks: [
-            Plot.barY(flattenedData, {
-                y: d => d.count,
-                fill: d => d.repo, // Use repository name for color
-                tip: true
-            }),
-            Plot.ruleY([0]) // Add a baseline at y = 0
-        ]
-    });
+    
 
+    
+// Add a cell for each leaf of the hierarchy
+const leaf = svg.selectAll("g")
+    .data(root.leaves())
+    .join("g")
+    .attr("transform", d => `translate(${d.x0},${d.y0})`);
+
+// Append a tooltip
+const format = d3.format(",d");
+leaf.append("title")
+    .text(d => `${d.ancestors().reverse().map(d => d.data.name).join(" > ")}\n${format(d.value)}`);
+
+// Append a color rectangle
+leaf.append("rect")
+    .attr("fill", d => color(d.data.name))
+    .attr("fill-opacity", 0.6)
+    .attr("width", d => d.x1 - d.x0)
+    .attr("height", d => d.y1 - d.y0);
+
+// Append multiline text
+leaf.append("text")
+    .attr("x", 3)
+    .attr("y", "1.1em")
+    .attr("fill-opacity", 0.7)
+    .text(d => `${d.data.name} (${format(d.value)})`);
+
+
+
+    
+    
+    
     // Append or replace the plot element for repo breakdown
     const repoBreakdownDiv = document.getElementById("repoBreakdown");
-    repoBreakdownDiv.innerHTML = ''; // Clear previous plot
-    repoBreakdownDiv.appendChild(repoPlot); // Append the new plot
+    repoBreakdownDiv.innerHTML = "Contributions by Repository (Stacked) in Month " + clickedMonth; // Clear previous plot
+
+    repoBreakdownDiv.appendChild(svg.node()); // Append the new plot
 }
 
 
