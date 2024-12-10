@@ -146,26 +146,138 @@ function renderPieChart() {
 
 <!-- Plot of launch history -->
 
-## How many contribution have I made on each repo the last year grouped by month ?
+## How many contribution have I made each month over the last year ?
 ```js
+import { rollup } from "d3";
+
 function contributionTimeline(data, {width} = {}) {
-    return Plot.plot({
-        title: "Contributions over the months",
-        width,
+    let datacopy = data;
+
+    // Add the month property to each data entry
+    datacopy.forEach(d => {
+        const date = new Date(d.date);
+        d.month = date.getMonth() + 1; // getMonth() returns 0-11, so we add 1
+    });
+
+
+    console.log("data",datacopy)
+
+// Aggregate data to get the sum of 'count' for each 'month'
+const aggregatedData = Array.from(
+  rollup(datacopy, v => d3.sum(v, d => d.count), d => d.month),
+  ([month, sum]) => ({ month, sum })
+);
+
+const basePlot = Plot.plot({
+  title: "Contributions over the months",
+  width,
+  height: 300,
+  y: { grid: true, label: "Contributions" },
+  color: { legend: false },
+  marks: [
+    Plot.barY(aggregatedData, {
+      x: "month",
+      y: "sum",
+      fill: "month",
+      tooltip: d => `Month: ${d.month}, Total Contributions: ${d.sum}`,  // Custom tooltip
+    }),
+    Plot.ruleY([0]),
+  ],
+});
+
+   let index = 12;  // Start with December (12)
+
+// After the plot is rendered, use D3 to select the rect elements and add the data-month attribute
+d3.select(basePlot).selectAll("rect")
+    .each(function(event, d, i) {
+        // Assign the current rect element with the correct month index
+        d3.select(this).attr("data-month", index);
+
+        // After setting the attribute, update the index, wrapping around from 12 to 1
+        index = (index === 1) ? 12 : index - 1;  // Decrement index, wrapping around to 12 when it reaches 1
+        })
+        .on("click", function(event, d) {
+            const clickedMonth = d3.select(this).attr("data-month");
+            console.log("Clicked Month:", clickedMonth);  // Log the clicked month
+
+            // Filter the data for the clicked month
+            const monthData = datacopy.filter(d => d.month === parseInt(clickedMonth));
+            console.log("Filtered Month Data:", monthData);
+
+            // Now render the breakdown of contributions by repository for the clicked month
+            renderRepoBreakdown(monthData, clickedMonth);
+        });
+
+    return basePlot;
+}
+function renderRepoBreakdown(monthData) {
+    console.log("Rendering Repo Breakdown for Month Data:", monthData);
+
+    // Aggregate the contributions by month and repo
+    const aggregatedData = d3.rollups(
+        monthData, 
+        v => d3.sum(v, d => d.count),  // Sum the contributions (count) for each month-repo combination
+        d => d.month,                  // Group by month
+        d => d.repo                     // Group by repo
+    );
+
+    // Flatten the aggregated data
+    const flattenedData = [];
+    aggregatedData.forEach(([month, repoData]) => {
+        repoData.forEach(([repo, count]) => {
+            flattenedData.push({ month, repo, count });
+        });
+    });
+    
+    console.log(aggregatedData); // Check what is being aggregated for each month-repo combination
+
+
+    // Create the plot
+    const repoPlot = Plot.plot({
+        title: "Contributions by Repo (Stacked) over Months",
+        width: 600,
         height: 300,
-        y: {grid: true, label: "Contributions"},
-        color: {...color, legend: true},
+        x: {
+            label: "Month",
+            domain: d3.range(1, 13), // Months 1 through 12
+        },
+        y: { 
+            label: "Contributions",
+            grid: true 
+        },
+        color: { 
+            legend: true, // Automatically generates legend based on the `repo` field
+            scale: { 
+                domain: flattenedData.map(d => d.repo), 
+                range: d3.schemeCategory10 
+            }
+        },
         marks: [
-            Plot.rectY(data, Plot.binX({y: "count"}, {x: "date", fill: "repo", interval: "month", tip: true})),
-            Plot.ruleY([0])
+            Plot.barY(flattenedData, {
+                x: d => d.month,
+                y: d => d.count,
+                fill: d => d.repo, // Use repository name for color
+                stack: "repo", // Stack the bars by repo
+                tip: true
+            }),
+            Plot.ruleY([0]) // Add a baseline at y = 0
         ]
     });
+
+    // Append or replace the plot element for repo breakdown
+    const repoBreakdownDiv = document.getElementById("repoBreakdown");
+    repoBreakdownDiv.innerHTML = ''; // Clear previous plot
+    repoBreakdownDiv.appendChild(repoPlot); // Append the new plot
 }
+
+
 ```
 
 <div class="grid grid-cols-1">
   <div class="card">
     ${resize((width) => contributionTimeline(contributions, {width}))}
+<div id="repoBreakdown"></div>
+
   </div>
 </div>
 
@@ -174,64 +286,73 @@ function contributionTimeline(data, {width} = {}) {
 ## What are the TOP 25 repositories to which I have contributed 2024?
 ```js
 function repositoryChart(data, { width }) {
-    const TOP=25
-    // Aggregate contributions per repository (sum of commits, PRs, code reviews, and issues)
-    const repoContributions = d3.rollup(data, 
-        (v) => d3.sum(v, (d) => d.count),  // Sum of counts per repository
-        (d) => d.repo  // Group by repository
+    const TOP = 24; // Top 24 repositories + 1 "Others" category
+
+    // Aggregate contributions per repository
+    const repoContributions = d3.rollup(
+        data,
+        (v) => d3.sum(v, (d) => d.count), // Sum contributions
+        (d) => d.repo // Group by repository
     );
 
-    // Convert rolled-up data into an array for plotting
+    // Convert rolled-up data into an array
     const repoData = Array.from(repoContributions, ([repo, count]) => ({ repo, count }));
 
-    // Sort repositories by contribution count in descending order
+    // Sort repositories by contribution count
     repoData.sort((a, b) => b.count - a.count);
 
-    // Select the top 25 repositories
+    // Select the top 24 repositories
     const topRepos = repoData.slice(0, TOP);
 
-    // Group remaining repositories as "Others"
+    // Group the remaining repositories as "Others"
     const otherRepos = repoData.slice(TOP);
     const others = {
         repo: "Others",
-        count: d3.sum(otherRepos, (d) => d.count)  // Sum of contributions from "Others"
+        count: d3.sum(otherRepos, (d) => d.count), // Sum of contributions from "Others"
     };
 
-    // Combine top 25 repos with "Others"
+    // Combine top 24 repositories with "Others"
     const finalRepoData = [...topRepos, others];
 
-    // Create the chart with a larger size
+    // Define a color scale for the top 24 repositories + "Others"
+    const colorScale = d3.scaleOrdinal()
+        .domain(finalRepoData.map((d) => d.repo))
+        .range(d3.schemeCategory10.concat(d3.schemeSet3).slice(0, 25)); // Use a palette with at least 25 distinct colors
+
+    // Create the chart
     const svg = Plot.plot({
         title: "Top Contributed Repositories",
-        width: 1200,  // Increase width for better display of 50 repos
-        height: 1000,  // Increase height for better spacing of bars
+        width: 1200, // Chart width
+        height: 1000, // Chart height
         marginTop: 20,
-        marginLeft: 400,  // Increase left margin for better readability of repo names
+        marginLeft: 400, // Increased left margin for readability
         x: {
-            grid: true, 
-            label: "Total Contributions",  // Label for X-axis
+            grid: true,
+            label: "Total Contributions",
         },
         y: {
-            label: "Repositories",  // Label for Y-axis
-            domain: finalRepoData.map((d) => d.repo),  // Define the domain for Y-axis based on repo names
+            label: "Repositories",
+            domain: finalRepoData.map((d) => d.repo), // Define y-axis based on repo names
         },
         color: {
-            ...color,
-            legend: true  // Optional: color for the bars
+            legend: true,
+            domain: finalRepoData.map((d) => d.repo),
+            range: colorScale.range(), // Use the defined color scale
         },
         marks: [
-            Plot.barX(finalRepoData, {  // Create horizontal bars
-                x: "count",  // X-axis uses the contribution count
-                y: "repo",   // Y-axis uses the repository names
-                fill: "repo",  // Fill color by repository
-                tip: (d) => `${d.repo}: ${d.count} Contributions`  // Tooltip functionality integrated with Plot
+            Plot.barX(finalRepoData, {
+                x: "count",
+                y: "repo",
+                fill: "repo", // Color bars by repository
+                tip: (d) => `${d.repo}: ${d.count} Contributions`, // Tooltip
             }),
-            Plot.ruleY([0])  // Add a baseline at Y = 0
-        ]
+            Plot.ruleY([0]), // Add a baseline at Y=0
+        ],
     });
 
     return svg;
 }
+
 
 
 
