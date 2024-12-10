@@ -28,7 +28,6 @@ const color = Plot.scale({
 
 ```js
 
-import { pie, arc, scaleOrdinal, schemeObservable10 } from "d3";
 function renderPieChart() {
   let  data = [
     { category: "Commits", value: contributions.filter((d) => d.type === "Commit").reduce((sum, d) => sum + d.count, 0) },
@@ -46,13 +45,13 @@ function renderPieChart() {
   const height = 400;
   const radius =  150;
 
-  const color = scaleOrdinal(schemeObservable10);
+  const color = d3.scaleOrdinal(d3.schemeObservable10);
 
-  const pieGenerator = pie().value((d) => d.value);
+  const pieGenerator = d3.pie().value((d) => d.value);
 
   const arcs = pieGenerator(data);
   
-  const arcGenerator = arc().innerRadius(0).outerRadius(radius);
+  const arcGenerator = d3.arc().innerRadius(0).outerRadius(radius);
 
   // Create the SVG container.
   const svg = d3.create("svg")
@@ -154,7 +153,6 @@ function renderPieChart() {
 
 ## How many contribution have I made each month over the last year ? ( Click for repository distribution)
 ```js
-import { rollup } from "d3";
 
 function contributionTimeline(data, {width} = {}) {
     let datacopy = data;
@@ -170,7 +168,7 @@ function contributionTimeline(data, {width} = {}) {
 
 // Aggregate data to get the sum of 'count' for each 'month'
 const aggregatedData = Array.from(
-  rollup(datacopy, v => d3.sum(v, d => d.count), d => d.month),
+  d3.rollup(datacopy, v => d3.sum(v, d => d.count), d => d.month),
   ([month, sum]) => ({ month, sum })
 );
 
