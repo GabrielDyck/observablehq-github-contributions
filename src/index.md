@@ -24,7 +24,8 @@ const color = Plot.scale({
 });
 ```
 
-## What is the contribution distribution?
+## How are the contributions distributed?
+
 
 ```js
 
@@ -119,7 +120,7 @@ function renderPieChart() {
 
   <div class=" grid grid-cols-3">
       <div class="card">
-        <h2>Total Contribution</h2>
+        <h2>Total Contributions</h2>
         <span class="big">${contributions.reduce((sum, d) => sum + d.count, 0)}</span>
       </div>
       <div class="card">
@@ -151,7 +152,8 @@ function renderPieChart() {
 
 <!-- Plot of launch history -->
 
-## How many contribution have I made each month over the last year ? ( Click for repository distribution)
+## How many contributions did I make each month last year ? ( Click for repository distribution)
+
 ```js
 
 function contributionTimeline(data, {width} = {}) {
@@ -238,7 +240,7 @@ function renderRepoBreakdown(monthData) {
 
     // Create the plot
     const repoPlot = Plot.plot({
-        title: "Contributions by Repo (Stacked) over Months",
+        title: "Contributions by Repository (Stacked) per Month",
         width: 600,
         height: 300,
         x: {
@@ -287,7 +289,8 @@ function renderRepoBreakdown(monthData) {
 
 <!-- Plot of contributions repositories -->
 
-## What are the TOP 25 repositories to which I have contributed 2024?
+## What are the TOP 25 repositories I have contributed to in 2024?
+
 ```js
 function repositoryChart(data, { width }) {
     const TOP = 24; // Top 24 repositories + 1 "Others" category
