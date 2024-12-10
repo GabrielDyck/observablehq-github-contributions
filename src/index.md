@@ -211,12 +211,12 @@ d3.select(basePlot).selectAll("rect")
             console.log("Filtered Month Data:", monthData);
 
             // Now render the breakdown of contributions by repository for the clicked month
-            renderRepoBreakdown(monthData, clickedMonth);
+            renderRepoBreakdown(monthData, clickedMonth, width);
         });
 
     return basePlot;
 }
-function renderRepoBreakdown(monthData) {
+function renderRepoBreakdown(monthData,clickedMonth , width) {
     console.log("Rendering Repo Breakdown for Month Data:", monthData);
 
     // Aggregate the contributions by month and repo
@@ -240,13 +240,9 @@ function renderRepoBreakdown(monthData) {
 
     // Create the plot
     const repoPlot = Plot.plot({
-        title: "Contributions by Repository (Stacked) per Month",
-        width: 600,
+        title: "Contributions by Repository (Stacked) in " + clickedMonth,
+        width: width,
         height: 300,
-        x: {
-            label: "Month",
-            domain: d3.range(1, 13), // Months 1 through 12
-        },
         y: { 
             label: "Contributions",
             grid: true 
@@ -260,10 +256,8 @@ function renderRepoBreakdown(monthData) {
         },
         marks: [
             Plot.barY(flattenedData, {
-                x: d => d.month,
                 y: d => d.count,
                 fill: d => d.repo, // Use repository name for color
-                stack: "repo", // Stack the bars by repo
                 tip: true
             }),
             Plot.ruleY([0]) // Add a baseline at y = 0
