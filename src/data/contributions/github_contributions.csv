@@ -1,0 +1,480 @@
+date,month,type,repo,count
+2024-12-06T17:11:43Z,12,Code Review,fantasy/fantasy-sidecar-injektilo,1
+2024-12-06T15:47:26Z,12,Code Review,fantasy/argocd-dev,1
+2024-12-06T14:39:16Z,12,Code Review,fantasy/fantasy-terraform-dev,1
+2024-12-04T19:50:59Z,12,Code Review,fantasy/fantasy-terraform-dev,1
+2024-12-03T16:58:03Z,12,Code Review,fantasy/fantasy-terraform-prod,1
+2024-11-29T19:09:30Z,11,Code Review,fantasy/integration-test,1
+2024-11-25T19:08:13Z,11,Code Review,fantasy/gateway,1
+2024-11-22T17:08:59Z,11,Code Review,fantasy/gateway,1
+2024-11-20T19:39:21Z,11,Code Review,fantasy/fantasy-terraform-prod,1
+2024-11-15T22:42:37Z,11,Code Review,fantasy/torwart,1
+2024-11-11T20:32:44Z,11,Code Review,fantasy/argocd-dev,1
+2024-11-11T20:12:35Z,11,Code Review,fantasy/argocd-prod,1
+2024-11-11T19:58:56Z,11,Code Review,fantasy/argocd-dev,1
+2024-11-07T15:11:05Z,11,Code Review,fantasy/mas,1
+2024-11-04T14:29:26Z,11,Code Review,fantasy/mas,1
+2024-11-04T14:25:55Z,11,Code Review,fantasy/mas,1
+2024-11-04T14:15:12Z,11,Code Review,fantasy/gateway,1
+2024-11-01T15:41:55Z,11,Code Review,fantasy/fantasy-scala-sbt-docker,1
+2024-10-28T19:30:44Z,10,Code Review,fantasy/gateway,1
+2024-10-28T14:19:20Z,10,Code Review,fantasy/argocd-prod,1
+2024-10-28T13:55:39Z,10,Code Review,fantasy/mas,1
+2024-10-28T12:34:53Z,10,Code Review,fantasy/gateway,1
+2024-10-23T19:22:23Z,10,Code Review,fantasy/cloudia-cache,1
+2024-10-23T18:01:05Z,10,Code Review,fantasy/argocd-dev,1
+2024-10-07T17:38:04Z,10,Code Review,fantasy/monitoring,1
+2024-10-01T19:09:43Z,10,Code Review,fantasy/fantasy-desplegar,1
+2024-09-20T09:35:41Z,9,Code Review,fantasy/fantasy-jav17-sebastiansarco,1
+2024-09-18T20:36:29Z,9,Code Review,fantasy/gateway,1
+2024-09-18T19:59:45Z,9,Code Review,fantasy/fantasy-desplegar,1
+2024-09-17T12:40:50Z,9,Code Review,fantasy/fantasy-jav17-sebastiansarco,1
+2024-09-17T12:12:09Z,9,Code Review,fantasy/fantasy-jav17-sebastiansarco,1
+2024-09-16T14:47:03Z,9,Code Review,fantasy/fantasy-pipeline,1
+2024-09-04T19:21:42Z,9,Code Review,fantasy/mas,1
+2024-08-27T14:35:13Z,8,Code Review,fantasy/argocd-prod,1
+2024-08-23T13:12:43Z,8,Code Review,fantasy/argocd-dev,1
+2024-08-23T11:45:53Z,8,Code Review,fantasy/fantasy-bigbang,1
+2024-08-20T19:19:30Z,8,Code Review,fantasy/mas,1
+2024-08-12T14:23:24Z,8,Code Review,fantasy/monitoring,1
+2024-08-08T12:43:53Z,8,Code Review,fantasy/fantasy-terraform-prod,1
+2024-08-07T17:12:19Z,8,Code Review,fantasy/fantasy-terraform-dev,1
+2024-08-07T16:13:28Z,8,Code Review,fantasy/mas,1
+2024-08-07T15:56:07Z,8,Code Review,fantasy/monitoring,1
+2024-08-06T19:27:58Z,8,Code Review,fantasy/fantasyctl,1
+2024-07-10T18:14:45Z,7,Code Review,fantasy/monitoring,1
+2024-07-10T16:59:50Z,7,Code Review,fantasy/mas,1
+2024-07-08T19:47:11Z,7,Code Review,fantasy/grafana-dashboards-prod,1
+2024-07-08T18:36:48Z,7,Code Review,fantasy/argocd-prod,1
+2024-07-08T18:36:25Z,7,Code Review,fantasy/argocd-dev,1
+2024-06-28T15:42:30Z,6,Code Review,fantasy/mas,1
+2024-06-26T14:42:23Z,6,Code Review,fantasy/tzdata-job,1
+2024-06-11T15:23:57Z,6,Code Review,fantasy/argocd-dev,1
+2024-06-10T21:13:45Z,6,Code Review,fantasy/fantasy-pipeline,1
+2024-06-10T17:26:15Z,6,Code Review,fantasy/fantasy-pipeline-coco-step,1
+2024-06-10T15:03:28Z,6,Code Review,fantasy/argocd-prod,1
+2024-06-05T12:50:35Z,6,Code Review,fantasy/argocd-dev,1
+2024-05-28T19:20:37Z,5,Code Review,fantasy/monitoring,1
+2024-05-27T18:19:21Z,5,Code Review,fantasy/monitoring,1
+2024-05-24T15:18:10Z,5,Code Review,fantasy/fantasy-terraform-prod,1
+2024-05-22T15:19:58Z,5,Code Review,fantasy/fantasy-terraform-dev,1
+2024-05-17T13:24:46Z,5,Code Review,fantasy/fantasy-pipeline-coco-step,1
+2024-05-17T13:20:23Z,5,Code Review,fantasy/argocd-dev,1
+2024-05-16T22:15:36Z,5,Code Review,fantasy/argocd-dev,1
+2024-05-16T20:47:10Z,5,Code Review,fantasy/argocd-dev,1
+2024-05-16T20:41:47Z,5,Code Review,fantasy/argocd-dev,1
+2024-05-16T20:33:14Z,5,Code Review,fantasy/argocd-dev,1
+2024-05-13T20:20:34Z,5,Code Review,fantasy/fantasy-terraform,1
+2024-05-09T15:25:33Z,5,Code Review,fantasy/runtime-metrics,1
+2024-05-09T14:17:23Z,5,Code Review,fantasy/grafana-users-dashboards,1
+2024-05-09T13:39:27Z,5,Code Review,fantasy/grafana-dashboards,1
+2024-05-08T13:40:59Z,5,Code Review,fantasy/argocd-dev,1
+2024-05-08T13:33:19Z,5,Code Review,fantasy/fantasy-terraform,1
+2024-05-02T13:37:54Z,5,Code Review,fantasy/loki,1
+2024-04-30T12:45:39Z,4,Code Review,fantasy/argocd-dev,1
+2024-04-29T14:00:33Z,4,Code Review,fantasy/argocd-dev,1
+2024-04-24T17:43:53Z,4,Code Review,fantasy/fantasy-terraform,1
+2024-04-24T17:43:12Z,4,Code Review,fantasy/argocd-dev,1
+2024-04-24T13:51:38Z,4,Code Review,fantasy/fantasy-coco,1
+2024-04-23T14:30:43Z,4,Code Review,fantasy/fantasy-wick,1
+2024-04-22T17:32:28Z,4,Code Review,fantasy/proxy,1
+2024-04-19T15:35:42Z,4,Code Review,fantasy/fantasy-envy,1
+2024-04-19T13:04:11Z,4,Code Review,fantasy/argocd-dev,1
+2024-04-18T13:10:42Z,4,Code Review,fantasy/fantasy-coco-ephemeral-tools,1
+2024-04-04T20:07:43Z,4,Code Review,fantasy/monitoring,1
+2024-04-04T18:03:24Z,4,Code Review,fantasy/fantasy-terraform-prod,1
+2024-04-03T18:04:51Z,4,Code Review,fantasy/fantasy-terraform,1
+2024-04-03T14:34:03Z,4,Code Review,fantasy/monitoring,1
+2024-03-22T18:49:58Z,3,Code Review,fantasy/argocd-prod,1
+2024-03-22T15:36:31Z,3,Code Review,fantasy/argocd-dev,1
+2024-03-22T14:14:30Z,3,Code Review,fantasy/cloudia-cache,1
+2024-03-19T15:37:34Z,3,Code Review,fantasy/fantasy-go-cloudia-api-client,1
+2024-03-14T20:27:20Z,3,Code Review,fantasy/vulnerability-ticket-step,1
+2024-03-14T14:28:08Z,3,Code Review,fantasy/fantasy-pipeline-scan-image-step,1
+2024-03-13T15:16:14Z,3,Code Review,fantasy/fantasy-terraform-prod,1
+2024-03-13T15:16:05Z,3,Code Review,fantasy/fantasy-terraform,1
+2024-03-13T15:14:53Z,3,Code Review,fantasy/fantasy-terraform-dev,1
+2024-03-08T19:39:09Z,3,Code Review,fantasy/fantasy-pipeline,1
+2024-02-09T13:24:06Z,2,Code Review,fantasy/fantasy-lookout-backend,1
+2024-02-09T11:27:46Z,2,Code Review,fantasy/argocd-dev,1
+2024-02-08T12:10:01Z,2,Code Review,fantasy/fantasy-envy,1
+2024-02-02T15:28:46Z,2,Code Review,fantasy/mas,1
+2024-12-05T08:00:00Z,12,Commit,fantasy/monitoring,1
+2024-11-29T08:00:00Z,11,Commit,fantasy/monitoring,2
+2024-10-23T07:00:00Z,10,Commit,fantasy/monitoring,1
+2024-09-09T07:00:00Z,9,Commit,fantasy/monitoring,1
+2024-09-02T07:00:00Z,9,Commit,fantasy/monitoring,1
+2024-08-26T07:00:00Z,8,Commit,fantasy/monitoring,2
+2024-08-16T07:00:00Z,8,Commit,fantasy/monitoring,1
+2024-07-10T07:00:00Z,7,Commit,fantasy/monitoring,1
+2024-07-03T07:00:00Z,7,Commit,fantasy/monitoring,2
+2024-06-28T07:00:00Z,6,Commit,fantasy/monitoring,1
+2024-06-27T07:00:00Z,6,Commit,fantasy/monitoring,1
+2024-05-15T07:00:00Z,5,Commit,fantasy/monitoring,3
+2024-05-07T07:00:00Z,5,Commit,fantasy/monitoring,2
+2024-05-02T07:00:00Z,5,Commit,fantasy/monitoring,3
+2024-04-25T07:00:00Z,4,Commit,fantasy/monitoring,4
+2024-04-19T07:00:00Z,4,Commit,fantasy/monitoring,2
+2024-04-18T07:00:00Z,4,Commit,fantasy/monitoring,1
+2024-04-17T07:00:00Z,4,Commit,fantasy/monitoring,1
+2024-04-15T07:00:00Z,4,Commit,fantasy/monitoring,6
+2024-04-12T07:00:00Z,4,Commit,fantasy/monitoring,3
+2024-04-11T07:00:00Z,4,Commit,fantasy/monitoring,1
+2024-04-10T07:00:00Z,4,Commit,fantasy/monitoring,2
+2024-04-09T07:00:00Z,4,Commit,fantasy/monitoring,5
+2024-04-08T07:00:00Z,4,Commit,fantasy/monitoring,3
+2024-04-05T07:00:00Z,4,Commit,fantasy/monitoring,7
+2024-03-27T07:00:00Z,3,Commit,fantasy/monitoring,2
+2024-03-25T07:00:00Z,3,Commit,fantasy/monitoring,13
+2024-03-20T07:00:00Z,3,Commit,fantasy/monitoring,12
+2024-03-18T07:00:00Z,3,Commit,fantasy/monitoring,1
+2024-03-12T07:00:00Z,3,Commit,fantasy/monitoring,1
+2024-03-06T08:00:00Z,3,Commit,fantasy/monitoring,9
+2024-02-09T08:00:00Z,2,Commit,fantasy/monitoring,4
+2024-02-07T08:00:00Z,2,Commit,fantasy/monitoring,1
+2024-02-05T08:00:00Z,2,Commit,fantasy/monitoring,1
+2024-01-31T08:00:00Z,1,Commit,fantasy/monitoring,7
+2024-01-30T08:00:00Z,1,Commit,fantasy/monitoring,4
+2024-01-29T08:00:00Z,1,Commit,fantasy/monitoring,3
+2024-01-23T08:00:00Z,1,Commit,fantasy/monitoring,1
+2024-01-16T08:00:00Z,1,Commit,fantasy/monitoring,5
+2024-01-15T08:00:00Z,1,Commit,fantasy/monitoring,1
+2024-01-11T08:00:00Z,1,Commit,fantasy/monitoring,7
+2024-01-10T08:00:00Z,1,Commit,fantasy/monitoring,3
+2024-11-01T07:00:00Z,11,Commit,fantasy/argocd-dev,2
+2024-10-30T07:00:00Z,10,Commit,fantasy/argocd-dev,6
+2024-10-23T07:00:00Z,10,Commit,fantasy/argocd-dev,7
+2024-10-21T07:00:00Z,10,Commit,fantasy/argocd-dev,4
+2024-10-09T07:00:00Z,10,Commit,fantasy/argocd-dev,4
+2024-10-08T07:00:00Z,10,Commit,fantasy/argocd-dev,4
+2024-10-04T07:00:00Z,10,Commit,fantasy/argocd-dev,2
+2024-10-03T07:00:00Z,10,Commit,fantasy/argocd-dev,2
+2024-10-02T07:00:00Z,10,Commit,fantasy/argocd-dev,1
+2024-09-19T07:00:00Z,9,Commit,fantasy/argocd-dev,1
+2024-07-10T07:00:00Z,7,Commit,fantasy/argocd-dev,1
+2024-07-08T07:00:00Z,7,Commit,fantasy/argocd-dev,4
+2024-07-03T07:00:00Z,7,Commit,fantasy/argocd-dev,3
+2024-06-27T07:00:00Z,6,Commit,fantasy/argocd-dev,4
+2024-06-26T07:00:00Z,6,Commit,fantasy/argocd-dev,3
+2024-06-24T07:00:00Z,6,Commit,fantasy/argocd-dev,1
+2024-06-19T07:00:00Z,6,Commit,fantasy/argocd-dev,1
+2024-06-18T07:00:00Z,6,Commit,fantasy/argocd-dev,2
+2024-05-30T07:00:00Z,5,Commit,fantasy/argocd-dev,10
+2024-05-28T07:00:00Z,5,Commit,fantasy/argocd-dev,5
+2024-05-27T07:00:00Z,5,Commit,fantasy/argocd-dev,2
+2024-05-24T07:00:00Z,5,Commit,fantasy/argocd-dev,1
+2024-05-08T07:00:00Z,5,Commit,fantasy/argocd-dev,1
+2024-05-02T07:00:00Z,5,Commit,fantasy/argocd-dev,2
+2024-04-23T07:00:00Z,4,Commit,fantasy/argocd-dev,1
+2024-04-19T07:00:00Z,4,Commit,fantasy/argocd-dev,2
+2024-04-17T07:00:00Z,4,Commit,fantasy/argocd-dev,3
+2024-04-15T07:00:00Z,4,Commit,fantasy/argocd-dev,1
+2024-03-20T07:00:00Z,3,Commit,fantasy/argocd-dev,5
+2024-02-09T08:00:00Z,2,Commit,fantasy/argocd-dev,1
+2024-02-08T08:00:00Z,2,Commit,fantasy/argocd-dev,1
+2024-02-07T08:00:00Z,2,Commit,fantasy/argocd-dev,2
+2024-02-06T08:00:00Z,2,Commit,fantasy/argocd-dev,1
+2024-01-29T08:00:00Z,1,Commit,fantasy/argocd-dev,2
+2024-01-26T08:00:00Z,1,Commit,fantasy/argocd-dev,2
+2024-01-24T08:00:00Z,1,Commit,fantasy/argocd-dev,3
+2024-01-23T08:00:00Z,1,Commit,fantasy/argocd-dev,2
+2024-01-19T08:00:00Z,1,Commit,fantasy/argocd-dev,1
+2024-01-17T08:00:00Z,1,Commit,fantasy/argocd-dev,4
+2024-01-11T08:00:00Z,1,Commit,fantasy/argocd-dev,4
+2024-01-10T08:00:00Z,1,Commit,fantasy/argocd-dev,6
+2024-01-09T08:00:00Z,1,Commit,fantasy/argocd-dev,3
+2024-01-08T08:00:00Z,1,Commit,fantasy/argocd-dev,2
+2024-06-28T07:00:00Z,6,Commit,fantasy/grafana-dashboards,3
+2024-06-12T07:00:00Z,6,Commit,fantasy/grafana-dashboards,2
+2024-05-16T07:00:00Z,5,Commit,fantasy/grafana-dashboards,7
+2024-05-15T07:00:00Z,5,Commit,fantasy/grafana-dashboards,7
+2024-05-14T07:00:00Z,5,Commit,fantasy/grafana-dashboards,49
+2024-05-13T07:00:00Z,5,Commit,fantasy/grafana-dashboards,13
+2024-05-03T07:00:00Z,5,Commit,fantasy/grafana-dashboards,8
+2024-04-12T07:00:00Z,4,Commit,fantasy/grafana-dashboards,2
+2024-03-21T07:00:00Z,3,Commit,fantasy/grafana-dashboards,2
+2024-02-14T08:00:00Z,2,Commit,fantasy/grafana-dashboards,1
+2024-02-09T08:00:00Z,2,Commit,fantasy/grafana-dashboards,1
+2024-02-08T08:00:00Z,2,Commit,fantasy/grafana-dashboards,5
+2024-01-10T08:00:00Z,1,Commit,fantasy/grafana-dashboards,1
+2024-01-09T08:00:00Z,1,Commit,fantasy/grafana-dashboards,2
+2024-01-08T08:00:00Z,1,Commit,fantasy/grafana-dashboards,8
+2024-01-04T08:00:00Z,1,Commit,fantasy/grafana-dashboards,2
+2024-01-03T08:00:00Z,1,Commit,fantasy/grafana-dashboards,2
+2024-10-30T07:00:00Z,10,Commit,fantasy/argocd-prod,3
+2024-10-23T07:00:00Z,10,Commit,fantasy/argocd-prod,2
+2024-10-21T07:00:00Z,10,Commit,fantasy/argocd-prod,12
+2024-09-19T07:00:00Z,9,Commit,fantasy/argocd-prod,1
+2024-07-10T07:00:00Z,7,Commit,fantasy/argocd-prod,1
+2024-07-08T07:00:00Z,7,Commit,fantasy/argocd-prod,4
+2024-07-03T07:00:00Z,7,Commit,fantasy/argocd-prod,1
+2024-06-28T07:00:00Z,6,Commit,fantasy/argocd-prod,2
+2024-06-27T07:00:00Z,6,Commit,fantasy/argocd-prod,1
+2024-06-26T07:00:00Z,6,Commit,fantasy/argocd-prod,3
+2024-06-24T07:00:00Z,6,Commit,fantasy/argocd-prod,1
+2024-05-30T07:00:00Z,5,Commit,fantasy/argocd-prod,3
+2024-05-28T07:00:00Z,5,Commit,fantasy/argocd-prod,3
+2024-05-27T07:00:00Z,5,Commit,fantasy/argocd-prod,1
+2024-05-24T07:00:00Z,5,Commit,fantasy/argocd-prod,1
+2024-05-08T07:00:00Z,5,Commit,fantasy/argocd-prod,1
+2024-04-19T07:00:00Z,4,Commit,fantasy/argocd-prod,2
+2024-04-10T07:00:00Z,4,Commit,fantasy/argocd-prod,2
+2024-03-20T07:00:00Z,3,Commit,fantasy/argocd-prod,1
+2024-02-09T08:00:00Z,2,Commit,fantasy/argocd-prod,2
+2024-01-31T08:00:00Z,1,Commit,fantasy/argocd-prod,1
+2024-01-30T08:00:00Z,1,Commit,fantasy/argocd-prod,2
+2024-01-29T08:00:00Z,1,Commit,fantasy/argocd-prod,2
+2024-01-17T08:00:00Z,1,Commit,fantasy/argocd-prod,1
+2024-01-12T08:00:00Z,1,Commit,fantasy/argocd-prod,2
+2024-01-10T08:00:00Z,1,Commit,fantasy/argocd-prod,1
+2024-01-03T08:00:00Z,1,Commit,fantasy/argocd-prod,2
+2024-12-09T08:00:00Z,12,Commit,fantasy/gateway,8
+2024-12-06T08:00:00Z,12,Commit,fantasy/gateway,3
+2024-12-03T08:00:00Z,12,Commit,fantasy/gateway,6
+2024-11-22T08:00:00Z,11,Commit,fantasy/gateway,1
+2024-11-20T08:00:00Z,11,Commit,fantasy/gateway,4
+2024-11-13T08:00:00Z,11,Commit,fantasy/gateway,4
+2024-11-07T08:00:00Z,11,Commit,fantasy/gateway,1
+2024-11-06T08:00:00Z,11,Commit,fantasy/gateway,4
+2024-11-05T08:00:00Z,11,Commit,fantasy/gateway,7
+2024-11-04T08:00:00Z,11,Commit,fantasy/gateway,1
+2024-10-29T07:00:00Z,10,Commit,fantasy/gateway,5
+2024-10-25T07:00:00Z,10,Commit,fantasy/gateway,1
+2024-08-14T07:00:00Z,8,Commit,fantasy/gateway,2
+2024-12-06T08:00:00Z,12,Commit,fantasy/grafana-dashboards-dev,2
+2024-11-21T08:00:00Z,11,Commit,fantasy/grafana-dashboards-dev,4
+2024-11-04T08:00:00Z,11,Commit,fantasy/grafana-dashboards-dev,3
+2024-09-24T07:00:00Z,9,Commit,fantasy/grafana-dashboards-dev,3
+2024-07-04T07:00:00Z,7,Commit,fantasy/grafana-dashboards-dev,2
+2024-07-03T07:00:00Z,7,Commit,fantasy/grafana-dashboards-dev,3
+2024-06-28T07:00:00Z,6,Commit,fantasy/grafana-dashboards-dev,3
+2024-06-26T07:00:00Z,6,Commit,fantasy/grafana-dashboards-dev,1
+2024-06-12T07:00:00Z,6,Commit,fantasy/grafana-dashboards-dev,3
+2024-05-28T07:00:00Z,5,Commit,fantasy/grafana-dashboards-dev,2
+2024-12-06T08:00:00Z,12,Commit,fantasy/grafana-dashboards-prod,2
+2024-11-21T08:00:00Z,11,Commit,fantasy/grafana-dashboards-prod,2
+2024-11-04T08:00:00Z,11,Commit,fantasy/grafana-dashboards-prod,3
+2024-09-24T07:00:00Z,9,Commit,fantasy/grafana-dashboards-prod,2
+2024-07-04T07:00:00Z,7,Commit,fantasy/grafana-dashboards-prod,2
+2024-07-03T07:00:00Z,7,Commit,fantasy/grafana-dashboards-prod,2
+2024-06-28T07:00:00Z,6,Commit,fantasy/grafana-dashboards-prod,3
+2024-06-26T07:00:00Z,6,Commit,fantasy/grafana-dashboards-prod,1
+2024-06-13T07:00:00Z,6,Commit,fantasy/grafana-dashboards-prod,3
+2024-06-12T07:00:00Z,6,Commit,fantasy/grafana-dashboards-prod,2
+2024-05-28T07:00:00Z,5,Commit,fantasy/grafana-dashboards-prod,2
+2024-04-29T07:00:00Z,4,Commit,fantasy/karpenter,1
+2024-01-10T08:00:00Z,1,Commit,fantasy/karpenter,1
+2024-01-09T08:00:00Z,1,Commit,fantasy/karpenter,1
+2024-01-04T08:00:00Z,1,Commit,fantasy/karpenter,5
+2024-05-09T07:00:00Z,5,Commit,fantasy/mas,4
+2024-05-08T07:00:00Z,5,Commit,fantasy/mas,2
+2024-03-08T08:00:00Z,3,Commit,fantasy/mas,3
+2024-02-08T08:00:00Z,2,Commit,fantasy/mas,1
+2024-01-30T08:00:00Z,1,Commit,fantasy/mas,1
+2024-01-24T08:00:00Z,1,Commit,fantasy/mas,4
+2024-01-10T08:00:00Z,1,Commit,fantasy/mas,2
+2024-06-12T07:00:00Z,6,Commit,fantasy/grafana-users-dashboards,1
+2024-02-14T08:00:00Z,2,Commit,fantasy/grafana-users-dashboards,3
+2024-02-09T08:00:00Z,2,Commit,fantasy/grafana-users-dashboards,3
+2024-01-10T08:00:00Z,1,Commit,fantasy/grafana-users-dashboards,3
+2024-01-09T08:00:00Z,1,Commit,fantasy/grafana-users-dashboards,2
+2024-01-04T08:00:00Z,1,Commit,fantasy/grafana-users-dashboards,2
+2024-01-03T08:00:00Z,1,Commit,fantasy/grafana-users-dashboards,1
+2024-12-03T08:00:00Z,12,Commit,fantasy/vulnerability-ticket-step,2
+2024-11-20T08:00:00Z,11,Commit,fantasy/vulnerability-ticket-step,4
+2024-10-28T07:00:00Z,10,Commit,fantasy/vulnerability-ticket-step,3
+2024-10-24T07:00:00Z,10,Commit,fantasy/vulnerability-ticket-step,2
+2024-10-23T07:00:00Z,10,Commit,fantasy/vulnerability-ticket-step,5
+2024-12-09T08:00:00Z,12,Commit,GabrielDyck/ds.02,6
+2024-12-08T08:00:00Z,12,Commit,GabrielDyck/ds.02,4
+2024-11-26T08:00:00Z,11,Commit,GabrielDyck/ds.02,2
+2024-12-09T08:00:00Z,12,Commit,GabrielDyck/observablehq-github-contributions,1
+2024-12-08T08:00:00Z,12,Commit,GabrielDyck/observablehq-github-contributions,9
+2024-11-26T08:00:00Z,11,Commit,GabrielDyck/observablehq-github-contributions,2
+2024-10-18T07:00:00Z,10,Commit,fantasy/fantasy-grafana-atp-synchronizer,3
+2024-10-02T07:00:00Z,10,Commit,fantasy/fantasy-grafana-atp-synchronizer,2
+2024-07-05T07:00:00Z,7,Commit,fantasy/fantasy-grafana-atp-synchronizer,1
+2024-05-27T07:00:00Z,5,Commit,fantasy/fantasy-grafana-atp-synchronizer,2
+2024-05-24T07:00:00Z,5,Commit,fantasy/fantasy-grafana-atp-synchronizer,1
+2024-05-22T07:00:00Z,5,Commit,fantasy/fantasy-grafana-atp-synchronizer,1
+2024-03-14T07:00:00Z,3,Commit,fantasy/fantasy-grafana-atp-synchronizer,1
+2024-11-21T08:00:00Z,11,Commit,fantasy/torwart,3
+2024-11-20T08:00:00Z,11,Commit,fantasy/torwart,4
+2024-10-28T07:00:00Z,10,Commit,fantasy/torwart,2
+2024-10-25T07:00:00Z,10,Commit,fantasy/torwart,1
+2024-01-17T08:00:00Z,1,Commit,fantasy/fantasy-java-otel-poc,1
+2024-01-15T08:00:00Z,1,Commit,fantasy/fantasy-java-otel-poc,1
+2024-01-05T08:00:00Z,1,Commit,fantasy/fantasy-java-otel-poc,1
+2024-01-03T08:00:00Z,1,Commit,fantasy/fantasy-java-otel-poc,1
+2024-01-02T08:00:00Z,1,Commit,fantasy/fantasy-java-otel-poc,5
+2024-05-31T07:00:00Z,5,Commit,fantasy/fantasy-sidecar-injektilo,4
+2024-01-29T08:00:00Z,1,Commit,fantasy/fantasy-sidecar-injektilo,2
+2024-01-12T08:00:00Z,1,Commit,fantasy/fantasy-sidecar-injektilo,1
+2024-01-11T08:00:00Z,1,Commit,fantasy/fantasy-sidecar-injektilo,1
+2024-10-30T07:00:00Z,10,Commit,fantasy/alerts,3
+2024-06-19T07:00:00Z,6,Commit,fantasy/alerts,3
+2024-01-10T08:00:00Z,1,Commit,fantasy/alerts,1
+2024-04-17T07:00:00Z,4,Commit,fantasy/promtail,1
+2024-04-04T07:00:00Z,4,Commit,fantasy/promtail,1
+2024-02-07T08:00:00Z,2,Commit,fantasy/promtail,2
+2024-01-10T08:00:00Z,1,Commit,fantasy/promtail,1
+2024-01-09T08:00:00Z,1,Commit,fantasy/promtail,1
+2024-05-31T07:00:00Z,5,Commit,fantasy/fantasy-envy,6
+2024-07-05T07:00:00Z,7,Commit,fantasy/fantasy-prominfra,1
+2024-06-24T07:00:00Z,6,Commit,fantasy/fantasy-prominfra,4
+2024-06-19T07:00:00Z,6,Commit,fantasy/fantasy-prominfra,1
+2024-07-05T07:00:00Z,7,Commit,fantasy/fantasy-infrasec-grafana-atp-synchronizer,1
+2024-05-27T07:00:00Z,5,Commit,fantasy/fantasy-infrasec-grafana-atp-synchronizer,2
+2024-05-24T07:00:00Z,5,Commit,fantasy/fantasy-infrasec-grafana-atp-synchronizer,1
+2024-05-22T07:00:00Z,5,Commit,fantasy/fantasy-infrasec-grafana-atp-synchronizer,1
+2024-03-14T07:00:00Z,3,Commit,fantasy/fantasy-infrasec-grafana-atp-synchronizer,1
+2024-07-10T07:00:00Z,7,Commit,fantasy/fantasyctl,1
+2024-06-24T07:00:00Z,6,Commit,fantasy/fantasyctl,1
+2024-01-24T08:00:00Z,1,Commit,fantasy/fantasyctl,1
+2024-01-12T08:00:00Z,1,Commit,fantasy/fantasyctl,3
+2024-09-25T07:00:00Z,9,Commit,fantasy/load-balancers,1
+2024-09-04T07:00:00Z,9,Commit,fantasy/load-balancers,3
+2024-01-12T08:00:00Z,1,Commit,fantasy/load-balancers,1
+2024-01-11T08:00:00Z,1,Commit,fantasy/load-balancers,1
+2024-10-29T07:00:00Z,10,Commit,fantasy/onboarding,2
+2024-06-27T07:00:00Z,6,Commit,fantasy/onboarding,1
+2024-11-20T08:00:00Z,11,Commit,fantasy/fantasy-terraform,1
+2024-11-12T08:00:00Z,11,Commit,fantasy/fantasy-terraform,2
+2024-05-24T07:00:00Z,5,Commit,fantasy/fantasy-terraform,1
+2024-01-29T08:00:00Z,1,Commit,fantasy/fantasy-terraform,1
+2024-07-02T07:00:00Z,7,Commit,fantasy/fantasy-bigbang,1
+2024-06-24T07:00:00Z,6,Commit,fantasy/fantasy-bigbang,1
+2024-01-12T08:00:00Z,1,Commit,fantasy/fantasy-bigbang,1
+2024-01-10T08:00:00Z,1,Commit,fantasy/fantasy-bigbang,1
+2024-09-19T07:00:00Z,9,Commit,fantasy/fantasy-pipeline,2
+2024-07-05T07:00:00Z,7,Commit,fantasy/fantasy-pipeline,1
+2024-06-19T07:00:00Z,6,Commit,fantasy/fantasy-pipeline,1
+2024-05-24T07:00:00Z,5,Commit,fantasy/fantasy-terraform-prod,1
+2024-01-29T08:00:00Z,1,Commit,fantasy/fantasy-terraform-prod,1
+2024-12-04T08:00:00Z,12,Commit,fantasy/docker-images,2
+2024-08-29T07:00:00Z,8,Commit,fantasy/docker-images,1
+2024-07-05T07:00:00Z,7,Commit,fantasy/docker-images,1
+2024-03-13T07:00:00Z,3,Commit,GabrielDyck/grafana-oauth-interceptor,3
+2024-08-28T07:00:00Z,8,Commit,fantasy/loki,1
+2024-01-12T08:00:00Z,1,Commit,fantasy/loki,2
+2024-09-10T07:00:00Z,9,Commit,fantasy/fantasy-empacar,3
+2024-06-24T07:00:00Z,6,Commit,fantasy/dart,1
+2024-01-12T08:00:00Z,1,Commit,fantasy/dart,1
+2024-01-10T08:00:00Z,1,Commit,fantasy/dart,1
+2024-01-11T08:00:00Z,1,Commit,fantasy/fantasy-tcp,2
+2024-01-10T08:00:00Z,1,Commit,fantasy/fantasy-tcp,1
+2024-11-15T08:00:00Z,11,Commit,fantasy/fantasy-desplegar,1
+2024-09-27T07:00:00Z,9,Commit,fantasy/fantasy-desplegar,2
+2024-01-17T08:00:00Z,1,Commit,fantasy/fantasy-service-test-a,2
+2024-03-21T07:00:00Z,3,Commit,fantasy/java-docker-example,2
+2024-03-21T07:00:00Z,3,Commit,fantasy/fantasy-lookout-ui,2
+2024-05-24T07:00:00Z,5,Commit,fantasy/fantasy-terraform-dev,1
+2024-01-29T08:00:00Z,1,Commit,fantasy/fantasy-terraform-dev,1
+2024-07-10T07:00:00Z,7,Commit,fantasy/service-clone-example,2
+2024-11-01T07:00:00Z,11,Commit,fantasy/fantasy-scala-sbt-docker,1
+2024-05-24T07:00:00Z,5,Commit,GabrielDyck/envoyaccesslog-otel,1
+2024-06-24T07:00:00Z,6,Commit,fantasy/fantasy-scripts,1
+2024-08-07T07:00:00Z,8,Commit,fantasy/fantasy-cloud-puppet,1
+2024-07-10T15:43:17Z,7,Pull Request,fantasy/monitoring,1
+2024-07-02T20:50:38Z,7,Pull Request,fantasy/monitoring,1
+2024-06-28T15:46:38Z,6,Pull Request,fantasy/monitoring,1
+2024-05-02T19:01:55Z,5,Pull Request,fantasy/monitoring,1
+2024-05-02T14:37:50Z,5,Pull Request,fantasy/monitoring,1
+2024-04-19T16:34:46Z,4,Pull Request,fantasy/monitoring,1
+2024-04-17T22:14:10Z,4,Pull Request,fantasy/monitoring,1
+2024-04-11T14:52:08Z,4,Pull Request,fantasy/monitoring,1
+2024-04-08T16:33:46Z,4,Pull Request,fantasy/monitoring,1
+2024-02-09T16:57:17Z,2,Pull Request,fantasy/monitoring,1
+2024-02-05T18:41:05Z,2,Pull Request,fantasy/monitoring,1
+2024-01-31T18:38:48Z,1,Pull Request,fantasy/monitoring,1
+2024-01-25T13:59:43Z,1,Pull Request,fantasy/monitoring,1
+2024-01-19T12:18:31Z,1,Pull Request,fantasy/monitoring,1
+2024-01-09T15:43:46Z,1,Pull Request,fantasy/monitoring,1
+2024-01-09T14:14:23Z,1,Pull Request,fantasy/monitoring,1
+2024-10-21T20:35:54Z,10,Pull Request,fantasy/argocd-prod,1
+2024-10-18T21:29:54Z,10,Pull Request,fantasy/argocd-prod,1
+2024-09-19T14:33:17Z,9,Pull Request,fantasy/argocd-prod,1
+2024-07-10T16:05:23Z,7,Pull Request,fantasy/argocd-prod,1
+2024-07-03T17:49:48Z,7,Pull Request,fantasy/argocd-prod,1
+2024-06-24T20:09:57Z,6,Pull Request,fantasy/argocd-prod,1
+2024-05-22T14:58:35Z,5,Pull Request,fantasy/argocd-prod,1
+2024-05-08T17:03:06Z,5,Pull Request,fantasy/argocd-prod,1
+2024-01-31T18:46:03Z,1,Pull Request,fantasy/argocd-prod,1
+2024-01-12T13:26:21Z,1,Pull Request,fantasy/argocd-prod,1
+2024-01-09T15:41:02Z,1,Pull Request,fantasy/argocd-prod,1
+2024-10-18T21:10:06Z,10,Pull Request,fantasy/argocd-dev,1
+2024-09-19T14:29:50Z,9,Pull Request,fantasy/argocd-dev,1
+2024-07-10T15:36:57Z,7,Pull Request,fantasy/argocd-dev,1
+2024-07-03T16:41:23Z,7,Pull Request,fantasy/argocd-dev,1
+2024-06-19T19:29:58Z,6,Pull Request,fantasy/argocd-dev,1
+2024-06-19T15:34:31Z,6,Pull Request,fantasy/argocd-dev,1
+2024-05-22T14:55:49Z,5,Pull Request,fantasy/argocd-dev,1
+2024-01-09T15:15:33Z,1,Pull Request,fantasy/argocd-dev,1
+2024-11-25T13:33:20Z,11,Pull Request,fantasy/fantasy-sidecar-injektilo,1
+2024-05-31T16:18:12Z,5,Pull Request,fantasy/fantasy-sidecar-injektilo,1
+2024-05-31T16:07:36Z,5,Pull Request,fantasy/fantasy-sidecar-injektilo,1
+2024-01-29T20:14:19Z,1,Pull Request,fantasy/fantasy-sidecar-injektilo,1
+2024-01-11T15:53:55Z,1,Pull Request,fantasy/fantasy-sidecar-injektilo,1
+2024-11-20T19:28:37Z,11,Pull Request,fantasy/fantasy-terraform,1
+2024-11-12T19:20:12Z,11,Pull Request,fantasy/fantasy-terraform,1
+2024-05-22T15:04:12Z,5,Pull Request,fantasy/fantasy-terraform,1
+2024-04-04T20:17:54Z,4,Pull Request,fantasy/fantasy-terraform,1
+2024-01-29T13:14:34Z,1,Pull Request,fantasy/fantasy-terraform,1
+2024-10-09T20:31:37Z,10,Pull Request,fantasy/fantasy-grafana-atp-synchronizer,1
+2024-10-04T20:41:58Z,10,Pull Request,fantasy/fantasy-grafana-atp-synchronizer,1
+2024-10-02T18:26:38Z,10,Pull Request,fantasy/fantasy-grafana-atp-synchronizer,1
+2024-06-24T18:45:03Z,6,Pull Request,fantasy/fantasy-grafana-atp-synchronizer,1
+2024-05-22T14:49:47Z,5,Pull Request,fantasy/fantasy-grafana-atp-synchronizer,1
+2024-05-09T14:01:59Z,5,Pull Request,fantasy/mas,1
+2024-05-08T16:43:07Z,5,Pull Request,fantasy/mas,1
+2024-06-24T18:54:11Z,6,Pull Request,fantasy/fantasy-bigbang,1
+2024-06-19T15:27:07Z,6,Pull Request,fantasy/fantasy-bigbang,1
+2024-06-19T15:24:54Z,6,Pull Request,fantasy/fantasy-bigbang,1
+2024-01-10T18:58:30Z,1,Pull Request,fantasy/fantasy-bigbang,1
+2024-06-24T21:02:46Z,6,Pull Request,fantasy/fantasy-prominfra,1
+2024-06-24T20:34:15Z,6,Pull Request,fantasy/fantasy-prominfra,1
+2024-06-19T16:17:51Z,6,Pull Request,fantasy/fantasy-prominfra,1
+2024-06-19T15:49:12Z,6,Pull Request,fantasy/fantasy-prominfra,1
+2024-10-30T16:51:14Z,10,Pull Request,fantasy/alerts,1
+2024-06-19T18:25:19Z,6,Pull Request,fantasy/alerts,1
+2024-06-19T15:29:40Z,6,Pull Request,fantasy/alerts,1
+2024-01-09T14:50:27Z,1,Pull Request,fantasy/alerts,1
+2024-09-19T14:26:33Z,9,Pull Request,fantasy/fantasy-pipeline,1
+2024-06-24T18:31:32Z,6,Pull Request,fantasy/fantasy-pipeline,1
+2024-06-19T15:52:11Z,6,Pull Request,fantasy/fantasy-pipeline,1
+2024-05-22T15:18:45Z,5,Pull Request,fantasy/fantasy-terraform-dev,1
+2024-04-04T20:16:59Z,4,Pull Request,fantasy/fantasy-terraform-dev,1
+2024-01-29T13:17:12Z,1,Pull Request,fantasy/fantasy-terraform-dev,1
+2024-11-20T22:06:42Z,11,Pull Request,fantasy/gateway,1
+2024-11-04T13:15:21Z,11,Pull Request,fantasy/gateway,1
+2024-08-14T17:29:42Z,8,Pull Request,fantasy/gateway,1
+2024-11-04T19:56:24Z,11,Pull Request,fantasy/fantasy-desplegar,1
+2024-11-04T18:46:49Z,11,Pull Request,fantasy/fantasy-desplegar,1
+2024-09-27T13:39:56Z,9,Pull Request,fantasy/fantasy-desplegar,1
+2024-06-24T20:49:59Z,6,Pull Request,fantasy/fantasyctl,1
+2024-06-19T15:18:06Z,6,Pull Request,fantasy/fantasyctl,1
+2024-01-24T18:51:25Z,1,Pull Request,fantasy/fantasyctl,1
+2024-06-24T20:26:13Z,6,Pull Request,fantasy/dart,1
+2024-06-19T15:38:19Z,6,Pull Request,fantasy/dart,1
+2024-01-10T17:41:53Z,1,Pull Request,fantasy/dart,1
+2024-02-07T20:46:40Z,2,Pull Request,fantasy/promtail,1
+2024-01-09T14:59:57Z,1,Pull Request,fantasy/promtail,1
+2024-11-21T13:02:40Z,11,Pull Request,fantasy/torwart,1
+2024-10-28T20:18:32Z,10,Pull Request,fantasy/torwart,1
+2024-05-22T15:16:25Z,5,Pull Request,fantasy/fantasy-terraform-prod,1
+2024-01-29T13:17:46Z,1,Pull Request,fantasy/fantasy-terraform-prod,1
+2024-01-09T15:13:23Z,1,Pull Request,fantasy/karpenter,1
+2024-09-04T15:02:58Z,9,Pull Request,fantasy/load-balancers,1
+2024-01-11T15:49:27Z,1,Pull Request,fantasy/load-balancers,1
+2024-10-24T17:23:05Z,10,Pull Request,fantasy/vulnerability-ticket-step,1
+2024-10-23T18:39:19Z,10,Pull Request,fantasy/vulnerability-ticket-step,1
+2024-01-09T14:17:06Z,1,Pull Request,fantasy/grafana-users-dashboards,1
+2024-01-10T19:06:10Z,1,Pull Request,fantasy/fantasy-tcp,1
+2024-01-08T16:25:01Z,1,Pull Request,fantasy/grafana-dashboards,1
+2024-01-17T18:32:00Z,1,Pull Request,fantasy/fantasy-service-test-a,1
+2024-03-21T18:12:17Z,3,Pull Request,fantasy/fantasy-lookout-ui,1
+2024-05-31T15:25:47Z,5,Pull Request,fantasy/fantasy-envy,1
+2024-06-24T20:21:51Z,6,Pull Request,fantasy/fantasy-scripts,1
+2024-06-24T21:08:47Z,6,Pull Request,fantasy/netdata,1
+2024-08-07T18:59:51Z,8,Pull Request,fantasy/fantasy-cloud-puppet,1
+2024-09-10T16:25:00Z,9,Pull Request,fantasy/fantasy-empacar,1
